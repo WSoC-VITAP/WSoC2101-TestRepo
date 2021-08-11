@@ -24,9 +24,11 @@ Let’s begin with questioning the experience we have/had to participate in the 
   spend a lot of concentration on that one particular event info mail from the university admin or join the whatsapp
   groups or discord channels for each individual event for every small update. I have been to 15 such different groups
   and channels already , disorganised again.
-
+  
 - Okay, now we are up for the event but wait, I registered for two events on the same timeline. Now what do I do? Which
   one to go for, hassle. I wish i could easily compare the timelines of the two more easily before registration.
+=======
+### Hereby, the event is complete for the students, but what about the club members and the university admin? A lot of post event questions are:
 
 - Now, the event is complete, I loved the way it was organised. How do I pass my feedback and compliments to the
   organising committee and let the university admin know too, that it was one of its kind event? No way, but just to
