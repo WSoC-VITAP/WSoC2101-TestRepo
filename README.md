@@ -95,5 +95,3 @@ I forgot to mention that you need to run the django server first to know the tas
 to run the server and get started with solving this test tasks by completing the most of
 them. `The more you score, greater the chance you get selected to work on this project with us`.
 
-## Django Basics for newbies
-
