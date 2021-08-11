@@ -4,7 +4,9 @@
 
 ## Step-1: Setting up Django
 Before moving ahead, please make sure:
+
 1.) You have python installed on your system, else install from [here](https://www.python.org/downloads/).
+
 2.) pip package installed on your system, else refer [here](https://pip.pypa.io/en/stable/installation/).
 
 We are all set to Install Django.
