@@ -49,15 +49,30 @@ you make will be saved to the newly made branch on every commit.
 
 
 
-### Step -3: You need to run the django server first to know the tasks. Refer the following section on how to run the server.
+## Step -3: You need to run the django server first to know the tasks. Refer the following section on how to run the server.
 - First, set the directory to the folder that contains manage.py file.
 - Now, run the following command: 
 ```shell
    $> py manage.py runserver
 ```
-If all the steps have been followed and implemented correctly, the file should give an output like this.
---------------------------------------- ( Content to be added here).
+If an output like this is displayed : 
+
+![Capture](https://user-images.githubusercontent.com/44553464/129101294-636683f6-c087-4122-b811-1d4de3100442.PNG)
+
+(use (ctrl + c) to break first) use command : 
+```shell
+   $> py manage.py migrate
+```
+and with successful migration, again use the runserver command to finally get the desired output as:
+
+![Capture2](https://user-images.githubusercontent.com/44553464/129101554-682cb10b-27bb-476d-b46b-f4f23d7724c2.PNG)
+
+- Now, copy paste the server "http://XXXX" URL on your browser to see the webpages. 
+
+The Home Page would look like :
+![Capture3](https://user-images.githubusercontent.com/44553464/129102261-da47e8b7-5b98-40ed-a399-ba2a46ed3102.PNG)
 
 
 Now, you can start working on the given tasks ,get started with solving this test tasks by completing the most of
-them. `The more you score, greater the chance you get selected to work on this project with us`.
+them. 
+`The more you score, greater the chance of you being selected to work on this project with us`
