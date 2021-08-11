@@ -19,7 +19,7 @@ I wish i could easily compare the timelines of the two more easily before regist
 No way, but just to wait for any feedback form ( if any) from the organising clubs.
 Again another email to look for, never mind i won’t give my feedback.  
 
-●	Hereby, the event is complete for the students, but what about the club members and the university admin? A lot of post event questions are:
+	Hereby, the event is complete for the students, but what about the club members and the university admin? A lot of post event questions are:
 
 1.)	For the club EB :
 -	How well was the event organised, we shall take reviews from the participants?  Make and circulate a feedback form. 
