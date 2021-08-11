@@ -1,0 +1,46 @@
+<style>
+    nav {
+        background-color: #082032 !important;
+        margin: auto 12px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 20px 10px !important;
+    }
+
+    .nav-link {
+        color: white;
+        padding: 10px !important;
+    }
+
+    .navbar-brand {
+        font-family: 'Knewave', cursive;
+        font-size: 35px;
+        padding-left: 50px;
+    }
+
+    .navbar {
+        font-size: 20px;
+    }
+
+    .nav-link:hover {
+        color: white !important;
+    }
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">WSOC2101</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="{% url 'test_app:index' %}">Home</a>
+                <a class="nav-link" href="{% url 'test_app:frontend' %}">FrontEnd Tasks</a>
+                <a class="nav-link" href="{% url 'test_app:backend' %}">BackEnd Tasks</a>
+            </div>
+        </div>
+    </div>
+</nav>

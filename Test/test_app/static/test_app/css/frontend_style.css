@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Raleway&family=Pacifico&family=Recursive&family=Lato&family=Poppins&display=swap');
+
+body {
+    margin: 50px !important;
+    font-family: 'Poppins', sans-serif !important;
+    background: linear-gradient(115deg, #0F52BA, #002366) !important;
+}
+
+main {
+    margin: 0 12px !important;
+    background: #F9F9F9;
+    color: #0C2233;
+    font-size: 17px;
+}
+
+h2 {
+    font-family: 'Pacifico', sans-serif !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px !important;
+    margin-bottom: 20px !important;
+}
+
+.display-5 {
+    font-family: 'Pacifico', sans-serif !important;
+    margin: 20px;
+}
+
+.content-description {
+    margin: 0 50px 50px 50px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    padding: 10px 15px !important;
+}
+
+.btn:hover {
+    font-size: 18px;
+}
+
+.task-list {
+    background-color: #0C2233 !important;
+    color: white !important;
+    border: 1px solid white !important;
+    margin: 5px 60px;
+    padding: 20px !important;
+    border-radius: 12px !important;
+}
+
+.task-group {
+    margin-bottom: 50px;
+}
+
+.badge {
+    padding: 10px 20px !important;
+    font-size: 20px !important;
+}
+
+.btn {
+    font-size: 22px !important;
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    font-size: 25px !important;
+}

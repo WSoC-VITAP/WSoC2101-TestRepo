@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entry Test</title>
+
+    <link rel="stylesheet" href="{% static 'test_app/css/index_style.css' %}">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+<header>
+    {% include 'test_app/nav.html' %}
+</header>
+<main>
+    <div class="container">
+
+        <h1 class="display-5 text-center">WSoC2101: A hub for clubs</h1>
+        <article>
+            <section class="content-description">
+                <h2 class="display-5" style="font-size: 32px;">Project Description</h2>
+                <p style="margin-left: 20px;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae cum ex facilis,
+                    laboriosam
+                    magni odit quam velit. Ad amet animi consectetur consequatur, culpa deserunt ducimus ea eos error
+                    est
+                    explicabo, id impedit in iusto labore laboriosam laudantium minima necessitatibus, numquam odit
+                    ratione
+                    reprehenderit sed tempore ullam voluptas! Atque cupiditate deserunt exercitationem, explicabo
+                    molestiae
+                    perspiciatis sit velit? Corporis dolores eligendi expedita illo impedit itaque iure modi nemo optio
+                    voluptatibus. Accusamus adipisci aliquid aperiam commodi consectetur cumque cupiditate dolorum eos
+                    excepturi facilis fuga harum illum, ipsam ipsum iste laboriosam minus porro possimus quaerat quas
+                    quia
+                    quis quisquam quo saepe sed sequi temporibus velit! Accusamus ad aut blanditiis cupiditate deleniti
+                    distinctio dolorum eaque earum error esse excepturi exercitationem explicabo, id ipsa itaque labore
+                    laboriosam laudantium maxime, molestiae mollitia nam natus nisi odio officia omnis perferendis,
+                    perspiciatis quaerat quisquam repellat repellendus sed tempore temporibus unde ut velit vitae
+                    voluptatem. Alias, aliquid architecto doloribus facere natus nostrum pariatur porro, quam quia quod
+                    ratione totam velit voluptatum? Accusantium cumque iure maiores nobis officia quisquam reprehenderit
+                    ut.
+                    Ab dolores ex facilis sapiente sed! Cum doloremque qui quidem unde. Aliquam illum qui saepe sed
+                    suscipit, tenetur vitae! Aliquid distinctio eum fuga ipsam labore nam officiis pariatur tempore!
+                </p></section>
+        </article>
+        <article>
+            <h2 class="display-5 text-center" style="font-size: 32px;">Select a Path</h2>
+            <p class="lead text-center">There is nothing wrong with choosing both the paths 😉</p>
+            <div class="card-holder centered">
+                <div class="my-card">
+                    <h2>Front-End</h2>
+                    <div class="card-content">
+                        <p>
+                            Focuses on showing your creativity, imagination, designing and stuff. Create the face of the
+                            project along with your team.
+                            Want to support the team by adding interactivity to this project ?
+                        </p>
+                        <p>Then you are made for this path.</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="{% url 'test_app:frontend' %}" class="btn btn-primary">Bring It On 👍</a>
+                    </div>
+                </div>
+                <div class="my-card">
+                    <h2>Back-End</h2>
+                    <div class="card-content">
+                        <p>
+                            Want to show off your backend skills ? Take on this project head on with your future team ?
+                            Then the crown is yours, once you prove that you are capable of converting the project idea to reality.
+                        </p>
+                        <p> You seem worthy, care to test your backend skills?</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="{% url 'test_app:backend' %}" class="btn btn-primary">Challenge Accepted 👍</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</main>
+
+{% include 'test_app/footer.html' %}
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% load static %}
+<style>
+    footer {
+        background-color: #082032;
+        margin: auto auto !important;
+        padding: 100px;
+        bottom: 0;
+        position: relative;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .footer-icons img:hover {
+        width: 40px;
+        height: 40px;
+    }
+</style>
+
+<div class="container-fluid">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 my-auto border-top mt-auto">
+        <div class="col-md-auto d-flex align-items-center">
+            <a href="#" class=" text-light text-decoration-none lh-1">
+                WSOC2101 Entry Test Page
+            </a>
+            <span class="text-light">&copy; 2021 <span style="font-weight: bold">Ojasva Jain, Open Source Community VIT-AP</span></span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex footer-icons">
+            <li class="ms-3"><a href="https://discord.link/oscvitap" rel="noopener noreferrer" target="_blank"><img
+                    src="{% static 'test_app/img/discord_logo_icon.svg' %}" alt="Discord" width="45px" height="45px"
+                    style="margin-top: 2px;"></a></li>
+            <li class="ms-3"><a href="https://github.com/WSoC-VITAP/WSoC2101-TestRepo" rel="noopener noreferrer"
+                                target="_blank"><img src="{% static 'test_app/img/github_logo_icon.svg' %}" alt="GitHub"
+                                                     width="50px" height="50px"></a></li>
+            <li class="ms-3"><a href="#" rel="noopener noreferrer" target="_blank"><img
+                    src="{% static 'test_app/img/gmail_logo_icon.svg' %}" alt="Gmail" width="50px" height="50px"></a>
+            </li>
+        </ul>
+    </footer>
+</div>
