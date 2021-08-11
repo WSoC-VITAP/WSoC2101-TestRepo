@@ -27,12 +27,12 @@ Let’s begin with questioning the experience we have/had to participate in the 
   
 - Okay, now we are up for the event but wait, I registered for two events on the same timeline. Now what do I do? Which
   one to go for, hassle. I wish i could easily compare the timelines of the two more easily before registration.
-=======
+
 ### Hereby, the event is complete for the students, but what about the club members and the university admin? A lot of post event questions are:
 
 - Now, the event is complete, I loved the way it was organised. How do I pass my feedback and compliments to the
   organising committee and let the university admin know too, that it was one of its kind event? No way, but just to
-  wait for any feedback form ( if any) from the organising clubs. Again another email to look for, never mind i won’t
+  wait for any feedback form (if any) from the organising clubs. Again another email to look for, never mind i won’t
   give my feedback.
 
 ● Hereby, the event is complete for the students, but what about the club members and the university admin? A lot of
@@ -96,7 +96,7 @@ The above command will create a new branch, and you will be automatically switch
 you make will be saved to the newly made branch on every commit. Now, you can start working on the given tasks but yeah
 I forgot to mention that you need to run the django server first to know the tasks. Refer the following section on how
 to run the server and get started with solving this test tasks by completing the most of
-them. `The more you score, greater the chance you get selected to work on this project with us`.
+them. `The more you score, great.er the chance you get selected to work on this project with us`.
 
 ## Django Basics for newbies
 
