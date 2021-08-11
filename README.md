@@ -5,7 +5,7 @@
 
 - The admins, i.e. the club admin members and college admin ( if selected as an university project) will be able to track the expected audience set by the organising club, success bar of the event ( as in how much of the expected population actually participated in the event), see the student reviews. This will also help to track the most successful events organised in the university and best responded events by the students.
 
-## Why is this Projct needed?
+## Why is this Project needed?
 Let’s begin with questioning the experience we have/had to participate in the events happening in the university :
 -	We receive quite a plenty of emails daily, of which we need to filter the mails for the organised events ( which is never one at a time, plenty of them are organised simultaneously or one after other) which leads to a spam of emails among various other information passed by the university. Too much chaos, isn’t it?
 
