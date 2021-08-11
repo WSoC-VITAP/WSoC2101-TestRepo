@@ -59,7 +59,10 @@ participants (if any). Also, it would let the university admin track the working
 university. This project holds the potential to turn around the whole event organisation/registration process in the
 university, and improve the participation of students according to their interests and understanding.
 
-- Project Tech Stacks
+## Project Pre-requisites
+### Frontend:
+- HTML and CSS
+- JAVASCRIPT (Using Bootstrap mainly)
 
 ## Configuring workspace
 
