@@ -50,8 +50,8 @@ Let’s begin with questioning the experience we have/had to participate in the 
   individual platforms for recording the participation and attendances, but many others don’t, especially non-technical
   ones. And why individual platforms when one can do it for all?
 
-Hence, We cover these pitfalls in the event's organisation in the university. This project focuses to improve the
-event's management process for the students and post event tracking for the college and club admin department. It will
+Hence, We cover these pitfalls in the event organisation in the university. This project focuses to improve the
+event management process for the students and post event tracking for the college and club admin department. It will
 also let the student post their queries for the event, and the clubs can update FAQs regarding their event for better
 understanding of the participants. It provides the feature of short reviews from the participants post event and rate it
 for the club to administer how their event went and keep improving with time, by addressing the issues faced by the
