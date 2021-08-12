@@ -59,7 +59,7 @@ If an output like this is displayed :
 
 ![Capture](https://user-images.githubusercontent.com/44553464/129101294-636683f6-c087-4122-b811-1d4de3100442.PNG)
 
-(use (ctrl + c) to break first) use command : 
+`use (ctrl + c) to break first` use command : 
 ```shell
    $> py manage.py migrate
 ```
