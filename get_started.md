@@ -50,7 +50,7 @@ you make will be saved to the newly made branch on every commit.
 
 
 ## Step -3: You need to run the django server first to know the tasks. Refer the following section on how to run the server.
-- First, set the directory to the folder that contains manage.py file.
+- First, set the directory to the folder that contains manage.py file i.e. the [test](https://github.com/WSoC-VITAP/WSoC2101-TestRepo/tree/main/Test)  folder.
 - Now, run the following command: 
 ```shell
    $> py manage.py runserver
