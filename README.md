@@ -1,4 +1,5 @@
-# Development of a platform for students and college admin to administer the college clubs and events.
+# ClubSpot
+`Development of a platform for students and college admin to administer the college clubs and events.`
 
 ## Project Description
 
