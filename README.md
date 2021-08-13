@@ -64,5 +64,8 @@ university, and improve the participation of students according to their interes
 ### Frontend:
 - HTML and CSS
 - JAVASCRIPT (Using Bootstrap mainly)
+### Backend:
+- Basics of Django
+- Intermediate level Python
 
 ### To get started with the tasks please go to [get_started.md](https://github.com/WSoC-VITAP/WSoC2101-TestRepo/blob/main/get_started.md)
