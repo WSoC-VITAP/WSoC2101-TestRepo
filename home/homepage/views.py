@@ -10,3 +10,7 @@ class HomePage(TemplateView):
 
 class LoginPage(TemplateView):
     template_name = 'homepage/loginpage.html'
+
+
+class CarouselPage(TemplateView):
+    template_name = 'homepage/carouselpage.html'
