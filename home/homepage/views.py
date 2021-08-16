@@ -6,3 +6,7 @@ app_name = 'homepage'
 
 class HomePage(TemplateView):
     template_name = 'homepage/profilepage.html'
+
+
+class LoginPage(TemplateView):
+    template_name = 'homepage/loginpage.html'
