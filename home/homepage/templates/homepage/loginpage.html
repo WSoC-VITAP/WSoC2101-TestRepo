@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title> Login </title>
 
     <!-- Bootstrap - CSS only -->
@@ -18,16 +18,46 @@
     </header>
 
     <main>
-        <button id="login"> Login/Sign Up </a>
-    </main>
+    <button id="login"> Login/Sign Up </button>
 
-    <script type="text/javascript">
+    <form id="loginForm" action="">
+        <div class="container">
+
+            <h4 class="form-title"> WSoC Sign Up/Registration </h4>
+            
+            <div class="col-12 col-sm-10 mb-4">
+                <label for="emailId" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailId" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"> Don't worry, your email isn't shared with anyone else. </div>
+            </div>
+            <div class="col-12 col-sm-10 mb-4">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="col-12 col-sm-10 mb-4 form-check">
+                <input type="checkbox" class="form-check-input" id="check">
+                <label class="form-check-label" for="check"> Keep me logged in </label>
+            </div>
+          <button type="submit" id="btn"> Sign Up </button>
+        </div>
+    </form>
+</main>
+
+
+
+<script type="text/javascript">
     const loginBtn = document.getElementById('login');
+    const frm = document.getElementById('loginForm');
 
     loginBtn.addEventListener('click', () => {
         loginBtn.style.display = 'none';
+        frm.style.display = 'flex';
     })
 
-    </script>
+</script>
+
+<footer>
+    {% include 'homepage/footer.html' %}
+</footer>
 </body>
 </html>
