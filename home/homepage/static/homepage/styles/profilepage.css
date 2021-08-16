@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+/* css variables */
+:root {
+   --clr-red: #800000;
+   --clr-white: #fffaf0;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background-image: url('../images/college_image.jpeg');
+   margin: 0 auto;
+   padding-top: 50px;
+   overflow-x: hidden;
+}
+
+h1,
+footer {
+   text-align: center;
+}
+
+.table {
+   background-color: var(--clr-red);
+   color: var(--clr-white);
+}
+
+.table tr:hover {
+   color: var(--clr-red);
+   background-color: var(--clr-white);
+}
+
+.row-content {
+   padding: 40px 0px;
+   min-height: 400px;
+}
+
+footer {
+   position: absolute;
+   background-color: var(--clr-red);
+   color: var(--clr-white);
+   min-width: 100vw;
+   line-height: 40px;
+}
