@@ -11,13 +11,22 @@ body {
    font-family: 'Poppins', sans-serif;
    margin: 0 auto;
    overflow-x: hidden;
-   padding-top: 10%;
    display: flex;
    flex-direction: column;
    align-items: center;
+   background-position: 0 0;
+   background-size: 10px 10px;
+   height: 200px;
+   width: 100%;
+   background-image: radial-gradient(#6a5acd 20%, #fffafa 20%);
+   background-image: -moz-radial-gradient(#6a5acd 20%, #fffafa 20%);
+   background-image: -webkit-radial-gradient(#6a5acd 20%, #fffafa 20%);
 }
 
 /* buttons */
+.login {
+   padding-top: 50%;
+}
 
 #login,
 #btn {
@@ -28,6 +37,7 @@ body {
    border: 1px solid black;
    position: relative;
    background-color: rgba(0, 0, 0, 0);
+   z-index: 100;
 }
 
 #login::after,
@@ -50,15 +60,24 @@ body {
 
 /* form */
 form {
+   z-index: -25;
    display: none;
    padding: 25px 5px;
    border: 0.2px solid #000;
+   background-color: #fffafa;
    box-shadow: 2px 1px 0 0 var(--clr-blue);
+   align-items: center;
+   justify-content: center;
 }
 
 form:hover {
    box-shadow: 2px 1px 5px 0px var(--clr-blue);
 }
+
+form input:focus {
+   border: 1px solid var(--clr-blue);
+}
+
 .form-title {
    text-decoration: underline transparent;
    text-decoration-color: transparent;
@@ -68,4 +87,8 @@ form:hover {
    text-decoration: underline;
    text-decoration-color: var(--clr-blue);
    transition: text-decoration 0.2s ease-in;
+}
+
+#loginForm .container .form-check input[type='checkbox']:checked {
+   background-color: var(--clr-blue);
 }
