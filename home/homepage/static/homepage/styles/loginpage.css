@@ -18,27 +18,41 @@ body {
 }
 
 /* buttons */
+
 #login,
 #btn {
-   background-color: var(--clr-blue);
    color: var(--clr-white);
-   height: 40px;
-   width: 200px;
-   border-radius: 20px;
+   letter-spacing: 1px;
+   padding: 15px 55px 15px;
+   outline: none;
+   border: 1px solid black;
+   position: relative;
+   background-color: rgba(0, 0, 0, 0);
 }
 
-#login:hover,
-#btn:hover {
-   background-color: var(--clr-white);
-   color: var(--clr-blue);
+#login::after,
+#btn::after {
+   content: '';
+   background-color: var(--clr-blue);
+   width: 100%;
+   z-index: -1;
+   position: absolute;
+   height: 100%;
+   top: 7px;
+   left: 7px;
+}
+
+#login:hover::after,
+#btn:hover::after {
+   top: 0;
+   left: 0;
 }
 
 /* form */
 form {
    display: none;
-   padding: 20px 5px;
-   border: 0.2px solid #999;
-   border-radius: 10px;
+   padding: 25px 5px;
+   border: 0.2px solid #000;
    box-shadow: 2px 1px 0 0 var(--clr-blue);
 }
 
