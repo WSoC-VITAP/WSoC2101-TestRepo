@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* css variables */
 :root {
@@ -6,8 +6,9 @@
    --clr-white: #f5f5f5;
 }
 
+/* general */
 body {
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Poppins', sans-serif;
    margin: 0 auto;
    overflow-x: hidden;
    padding-top: 10%;
@@ -16,6 +17,7 @@ body {
    align-items: center;
 }
 
+/* buttons */
 #login,
 #btn {
    background-color: var(--clr-blue);
@@ -31,10 +33,25 @@ body {
    color: var(--clr-blue);
 }
 
+/* form */
 form {
    display: none;
    padding: 20px 5px;
    border: 0.2px solid #999;
    border-radius: 10px;
    box-shadow: 2px 1px 0 0 var(--clr-blue);
+}
+
+form:hover {
+   box-shadow: 2px 1px 5px 0px var(--clr-blue);
+}
+.form-title {
+   text-decoration: underline transparent;
+   text-decoration-color: transparent;
+}
+
+.form-title:hover {
+   text-decoration: underline;
+   text-decoration-color: var(--clr-blue);
+   transition: text-decoration 0.2s ease-in;
 }
