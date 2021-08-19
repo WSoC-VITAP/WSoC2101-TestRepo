@@ -6,8 +6,6 @@ body {
    margin: 0 auto;
    overflow-x: hidden;
    padding-top: 5%;
-   display: flex;
-   flex-direction: column;
    align-items: center;
    background-position: 0 0;
    background-size: 10px 10px;
@@ -19,6 +17,10 @@ body {
 }
 
 /* carousel */
+#carouselItem {
+   top: -10px;
+}
+
 #carouselItem .carousel-inner .carousel-item img {
    width: 450px;
    height: 450px;
@@ -43,4 +45,19 @@ body {
 
 .carousel-caption:hover {
    opacity: 1;
+}
+
+#carouselItem .carousel-indicators button {
+   width: 10px;
+   height: 10px;
+   border: 0.5px double slateblue;
+   border-radius: 50%;
+}
+
+.tape {
+   background-image: url(../images/tape.jpg);
+   z-index: 100;
+   width: 65px;
+   height: 40px;
+   transform: rotate(-30deg);
 }
