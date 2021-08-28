@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap');
+*{
+
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  background:  url("/static/images/c.jpeg") ;
+  height: 100vh;
+  width: 100%;
+  left:50%;
+  position: fixed;
+  top: 50%;
+  background-size: cover;
+  background-position: center center;
+  transform:translate(-50%, -50%);
+}
+h1 {
+  
+  font-family: 'Alegreya', serif;
+  font-size: 83px;
+  margin-left: 41vw;
+  color: aliceblue;
+  display: inline;
+
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  
+  margin-top: 4vh;
+  margin-left: 4vw;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  margin: 31px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #155a1683;
+}
+/* a {
+  display: inline-block;
+  font-family: 'Alegreya', serif;
+  
+  font-size: 18px;
+  float: right;
+  background: rgb(19 219 71 / 48%);
+  color: rgb(34, 21, 5);
+  margin-top: 4vh;
+  margin-right: 4vw;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px;
+  
+
+} */
+#grad{
+  height: 100vh;
+  width: 35vw;
+ 
+  background-image:linear-gradient(288deg,rgba(19, 10, 10, 0.568), #5422229e);
+  font-size: 20px;
+  
+}
+ b{
+ font-size:50px; 
+}
+#first{
+  font-size: 35px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(32 8 8 / 35%);
+  mix-blend-mode: overlay;
+}
+.text-container{
+  background-color: rgba(19, 10, 10, 0.568);
+}
+
+.footer{
+  margin-top: 26vh;
+  padding-bottom: 4vh;
+  color: aliceblue;
+  background-color: black;
+  
+}
+
+/*.gradiant{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0 deg rgba(19, 1, 1, 0.979) 50%,transparent 50%);
+}*/
+
+.bg {
+  animation:slide 4s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgba(0, 0, 0, 0.4) 50%, rgba(46, 45, 44, 0.4) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:5s;
+}
+
+.bg3 {
+  animation-duration:6s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}

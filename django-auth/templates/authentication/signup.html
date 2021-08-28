@@ -1,0 +1,71 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Login landing page</title>
+</head>
+<body>
+
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        <strong>Message:</strong> {{ message }}
+        <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button> -->
+    </div>
+    {% endfor %}
+    <!-- <section class="side">
+        <img src="./images/img.svg" alt="">
+    </section> -->
+    <video src="{% static 'videos/vi2.mp4' %}" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <section class="main" style="margin-left: 0; ">
+       
+        <div class="login-container">
+           
+            <p class="title">Join the community!</p>
+            <div class="separator"></div>
+            <!-- <p class="welcome-message">New here! &nbsp <u><b><a href="#">SignUp</a></b></u> &nbsp real quick</p> -->
+            <p class="welcome-message">Create your account to get started &nbsp</p>
+
+            <form action="/signup" method="post" class="login-form">
+                {% csrf_token %}
+                <div class="form-control">
+                    <input type="text" id="Username" name="username" placeholder="Username">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-control">
+                    <input type="email" id="email"  name="email" placeholder="Email">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="pass1" name="pass1" placeholder="Password">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="pass2" name="pass2" placeholder="Confirm Password">
+                    <i class="fas fa-lock"></i>
+                     
+                </div>
+                <!-- <h4 style="float: right; margin-left:248px; ">Forget password ?</h4> -->
+
+                <button type="submit" class="submit">SignUp</button>
+                <!-- <h5 style="text-align: center; font-size: 1.2rem;">or signup using</h6> -->
+                    <!-- <div id="my-signin2"></div> -->
+                    <h3 style="margin-left:20px ;">Already have an account? &nbsp <u><b><a href="/signin"> Sign in </a> </b></u></h3>
+                    </div>
+                  
+            </form>
+          
+        </div>
+        
+    </section>
+    <!-- <div class="img-cont"><a href="#"><img src="google.png" alt="" srcset="" style=" width:48px;margin-right:48vw;float: right;"></a></div> -->
+    
+</body>
+</html>

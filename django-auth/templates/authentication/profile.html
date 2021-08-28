@@ -1,0 +1,202 @@
+<!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signed in</title>
+</head>
+<body>
+    
+    <h1>Welcome</h1>
+    
+
+
+    {% if user.is_authenticated %}
+    <h3>Hello {{user.username}} </h3>
+    <button type="submit"><a href="/signout">SignOut</a></button>
+    {% else %}
+   <h4> You are succesfully signed in</h4>
+   {% endif %}
+
+   <script src="" async defer></script>
+</body>
+</html> -->
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      html,
+      body {
+        position: relative;
+        height: 80%;
+        margin-top: 20vh;
+      }
+
+      body {
+        background: rgb(239 173 173);
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 85%;
+        height: 85%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .navbar{
+        
+        height: 100px;
+        margin-top: -20vh;
+        margin-left: 90px;
+      
+      }
+      h1{
+       margin-top: 20px;
+        
+      }
+      .navbar button{
+        margin-right: 170px;
+        float: right;
+        margin-top: 24px;
+        ;
+      }
+      .text-container p{
+       color: rgb(49, 13, 13);
+       padding: 20px;
+       font-size: 15px;
+       font-weight: bold;
+      }
+      button.submit {
+    color: #fff;
+    padding: 14px 64px;
+    margin: -30px 20px ;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #dc292970, #831212d6);
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+button.submit:hover {
+    opacity: 0.9;
+}
+    </style>
+  </head>
+
+  <body>
+    {% if user.is_authenticated %}
+    <div class="navbar">
+      <h1 style="margin-left: 0px;">Welcome! &nbsp {{user.username}} </h1>
+      <a href="/signout"><button type="submit" class="submit"> LogOut</button></a>
+      
+    </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="static/images/1.png"></div>
+        <div class="swiper-slide"><img src="static/images/2.png"></div>
+        <div class="swiper-slide"><img src="static/images/3.png"></div>
+        <div class="swiper-slide"><img src="static/images/4.png"></div>
+        <div class="swiper-slide"><img src="static/images/5.jpg"></div>
+        <div class="swiper-slide"><img src="static/images/1.png"></div>
+        <div class="swiper-slide"><img src="static/images/2.png"></div>
+        <div class="swiper-slide"><img src="static/images/3.png"></div>
+        <div class="swiper-slide"><img src="static/images/4.png"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+   <div class="text-container">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, magni et doloribus, ipsa animi quod dolores aperiam quas rem tempora
+            tempore repellat nemo numquam! Ullam temporibus expedita voluptas aspernatur odio neque, velit tenetur quam quasi inventore? 
+            Voluptates ad nam, aspernatur soluta necessitatibus molestiae ducimus dignissimos tempora, hic adipisci, quam aliquam earum cumque
+             iure reprehenderit quia. Ducimus adipisci pariatur exercitationem dolorum reprehenderit ratione obcaecati aspernatur, deleniti illum
+              quia ea numquam vel, aperiam architecto ullam repellat tempora magni enim illo blanditiis hic in? Voluptates, veritatis ut asperiores 
+              rerum, a dolores ratione eligendi iusto explicabo eveniet assumenda culpa sunt eos mollitia! Voluptates quidem iusto animi unde 
+              laudantium eveniet velit. Mollitia perspiciatis voluptatum, reiciendis molestias provident nihil natus quia recusandae at eum a 
+              adipisci optio accusantium voluptas quas dicta officiis eligendi tempore quos fuga pariatur sequi exercitationem. Laborum nisi 
+              sapiente eveniet cupiditate harum nulla quasi eos! Error fugiat autem facere perferendis. Culpa consequatur repellat voluptatem
+               nihil illum voluptate, a laboriosam ab tempore fuga tempora provident, quam temporibus optio? Voluptas, repellat aperiam hic c
+               upiditate qui, exercitationem magni reiciendis explicabo voluptates, atque mollitia ipsum fugit ab odit quas sed! Id accusantium 
+               ex eligendi sint corporis cum porro nemo alias nesciunt aliquam dolores eius saepe repudiandae voluptate esse maxime at fugit
+                provident tempore, praesentium consectetur voluptas iure? Dolorem magni et beatae 
+           fugiat, recusandae maiores, aliquid similique animi molestias molestiae ad labore eum delectus. Reprehenderit soluta suscipit id.</p>
+   </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    {% endif %}
+  </body>
+</html>
