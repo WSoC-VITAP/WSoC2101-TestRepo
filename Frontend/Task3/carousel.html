@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Carousel Animation</title>
+    <style>
+        .carousel-item img{
+            height:400px;
+            
+        }
+        #para{
+            margin: 20px 70px;
+            text-align: justify;
+            background-color: rgba(255, 255, 255, 0.384);
+            padding: 20px;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:black;
+            box-shadow: 5px 5px 5px rgb(44, 44, 44);
+            letter-spacing: 0.5px;
+        }
+        body{
+            background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+        }
+        .container{
+            width: 700px; 
+            margin-top: 10px;
+            
+        }
+        .carousel-inner{
+            border: 2px solid transparent ;
+            border-radius: 50px;
+            box-shadow: 10px 10px 10px  rgb(80, 80, 80);
+        }
+        #heading{
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+            margin:  0px;
+            padding: 5PX 0px;
+            text-shadow:2px 2px rgb(255, 0, 0);
+            font-size: 45px;
+            background-color: rgba(0, 0, 0, 0.521);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <header>
+        <h1 id="heading">WSOC</h1>
+    </header>
+    <div class="container" >
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="5.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="2.png" class="d-block w-100" alt="...">
+              </div> 
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="4.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorem inventore placeat! Dicta quae doloremque voluptate harum nostrum neque illum dolor eligendi distinctio quisquam. Labore impedit eveniet nam reprehenderit a vel, eaque tempora adipisci quas rerum sed nihil ipsum enim. At sint voluptates officia unde excepturi ea omnis possimus tenetur quisquam placeat fuga sapiente blanditiis minima harum aliquid labore sunt voluptatem incidunt deleniti voluptatum ut adipisci eos, illum pariatur. Veniam iusto earum perspiciatis, facilis totam aliquid optio architecto perferendis exercitationem porro reprehenderit blanditiis laborum eum soluta autem quibusdam! Impedit, dolores est consectetur praesentium laborum repudiandae hic esse dolore sit rem.
+    </p>
+</body>
+</html>

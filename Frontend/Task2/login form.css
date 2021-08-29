@@ -1,0 +1,66 @@
+#heading{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin: 0;
+    padding: 30px;
+    text-shadow:2px 2px dimgray;
+    font-size: 35px;
+}
+body{
+    background: linear-gradient(45deg, #fc5c7d, #6a82fb);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+.box{
+    position: relative;
+    top: 40px;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #00000030;
+    
+}
+.input{
+    width: 300px;
+    margin: auto;
+}
+.check{
+    width: 10px;
+    margin: 0px;
+}
+.inputp{
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    color: #f2fdff;
+    font-family:'Times New Roman', Times, serif ;
+}
+.box input{
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#sub{
+    width: 80px;
+    padding:5px;
+    height: 30px;
+    margin:  auto;
+    margin: 20px 0px;
+    background-color: transparent ;
+    color: white;
+}
+#sub:hover{
+    background-color: rgba(255, 255, 255, 0.829);
+    color: black;
+    font-size: 100%;
+}
+.inputp span{
+    color: red;
+}
