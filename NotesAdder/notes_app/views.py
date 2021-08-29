@@ -42,7 +42,7 @@ def add_view(request):
 
 
 def add_note(request):
-    import pdb;pdb.set_trace();
+    # import pdb;pdb.set_trace();
     # note_objs = Note.objects.add()
     if request.method == 'GET':
         content = request.GET.get('content','Empty Note')
@@ -50,5 +50,5 @@ def add_note(request):
         # note_obj = note_objs.objects.get(id)
         note_obj.content = content
         note_obj.save()
-        return HttpResponse("notes_app\Form_added.html")
-    # print("hello")
+        # return HttpResponse("notes_app\index.html")
+        return home_view(request)
