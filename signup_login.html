@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup/Login page</title>
+<style>
+
+/* Styling the Body element i.e. Color,
+        Font, Alignment */
+  body {
+     background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url("images/5.jpg");
+     background-size: cover;
+     font-size: 17px;
+     text-align: center; 
+     color:gray;
+        }
+ 
+/* Styling the Form (Color, Padding, Shadow) */
+  form {
+      background-color:white;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+      color:teal;
+      font-weight: bold;
+        }
+ 
+/* Styling form-control Class */
+  .form-control {
+      text-align: left;
+      margin-bottom: 25px;
+        }
+
+/* Styling form-control Label */
+  .form-control label {
+      display: block;
+      margin-bottom: 10px;
+        }
+ 
+/* Styling form-control input,
+        select, textarea */
+  .form-control input,
+  .form-control select,
+  .form-control textarea {
+      border: 1px solid #777;
+      border-radius: 2px;
+      font-family: inherit;
+      padding: 10px;
+      display: block;
+      width: 95%;
+        }
+ 
+/* Styling form-control Radio
+        button and Checkbox */
+   .form-control input[type="radio"],
+   .form-control input[type="checkbox"] {
+   display: inline-block;
+   width: auto;
+        }
+
+/* Styling h1 and h2 */
+   h1,h2{
+   text-decoration: underline;
+   color:teal;
+        }
+
+/* Styling back button */
+.backbtn {
+   background-color:#999999;
+}
+
+/* Styling back button & sign up button */
+.backbtn, .signupbtn {
+  float: left;
+  width: 50%;
+  font-size: 15px;
+}
+
+/* Styling button */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: medium;
+}
+
+button:hover {
+  opacity:2;
+}
+
+/* Styling container */
+.container {
+  padding: -10px;
+}
+
+/* Styling class modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("images/5.jpg");
+  background-size: cover;
+  padding-top: 50px;
+}
+
+/* Styling class modal content */
+.modal-content {
+  background-color:white;
+  margin: 5% auto 15% auto; 
+  border: 2px solid #888;
+  width: 90%; 
+}
+
+/* Styling close */
+.close {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  color:white;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .backbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1>WSoC Model Signup/Login form</h1>
+<p>
+  <strong>Sign up</strong> to create a new account. <strong>Log in</strong> if you already have an account.
+</p>
+
+<button onclick="document.getElementById('1').style.display='block'" style="width:auto;">Sign Up</button>
+<div id="1" class="modal">
+  <span onclick="document.getElementById('1').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <h2>Sign up</h2>
+    <div class="container">
+        <div class="form-control">
+            <label for="username" id="name-label">
+                Username*
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text" 
+                   id="username"
+                   placeholder="Create username" name="username" required/>
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="email-label">
+                Email*
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" type="email" required/> 
+        </div>
+
+        <div class="form-control">
+            <label for="password" id="password-label">
+                Password*
+            </label>
+
+            <!-- Input Type Password-->
+            <input type="password" id="password" placeholder="Create password" type="password" required/>
+        </div>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('1').style.display='none'" class="backbtn">Back</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<button onclick="document.getElementById('2').style.display='block'" style="width:auto;">Log in</button>
+<div id="2" class="modal">
+  <span onclick="document.getElementById('2').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <h2>Log in</h2>
+    <div class="container">
+        <div class="form-control">
+            
+       <!-- Create Form -->
+    <form id="login-form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="username" id="name-label">
+                Username
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text" 
+                   id="username"
+                   placeholder="Create username" name="username" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="password" id="password-label">
+                Password
+            </label>
+
+            <!-- Input Type Password-->
+            <input type="password" id="password" placeholder="Enter password" type="password" required/>
+        </div>
+
+  
+        <div class="form-control">
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp" value="javascript" >Remember me/Keep me logged in</input></label>
+           
+        </div>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('2').style.display='none'" class="backbtn">Back</button>
+        <button type="submit" class="signupbtn">Login</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<script>
+var modal = document.getElementById('1');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+var modal = document.getElementById('2');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
+    

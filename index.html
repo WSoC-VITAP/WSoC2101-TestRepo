@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homepage</title>
+<style>
+ body{
+   background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url("images/5.jpg");
+   background-size: cover;
+ }
+
+  h2{
+  text-align: center;
+  color: teal;
+  font-size: 40px;
+  text-decoration: underline;
+  }
+
+  p{
+    padding-bottom: 20px;
+    font-size: larger;
+  }
+
+.dropbtn {
+  background-color: teal;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width:450px;
+  height:50px;
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #c1d0f0}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #00b3b3;
+}
+</style>
+</head>
+<body>
+
+<h2>WSoC2101</h2>
+<p>I've completed the respective tasks in front-end.
+   Move your mouse over the button to see a dropdown menu where I have listed all the 3 tasks. Hope you like it!</p>
+
+<div class="dropdown" style="float:left; padding-left:450px;">
+  <button class="dropbtn">Front-end tasks</button>
+  <div class="dropdown-content" style="left:0;">
+  <a href="profile.html">Task 1</a>
+  <a href="signup_login.html">Task 2</a>
+  <a href="carousel.html">Task 3</a>
+  </div>
+</div>
+
+</body>
+</html>
