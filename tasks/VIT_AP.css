@@ -1,0 +1,55 @@
+h1{
+    background: #11131a;
+    color:#66fcf1;
+    height: 70px;
+    padding-top:10px;
+    font-size: 50px;
+    border-top:10px solid #38485c;
+    border-bottom:10px solid #38485c;
+    margin:0;
+    text-shadow: 2px 2px 3px rgb(3, 73, 119);
+    
+}
+*{
+    margin:0;
+}
+.wrapper p{
+    text-align: center;
+    font-size: 19px;
+    padding:20px;
+    font-weight:bold;
+    font-family: 'Work Sans', sans-serif;
+ word-spacing: 3px;
+   color:#ffffff;
+   text-shadow: 2px 2px 3px rgba(3, 23, 53, 0.945);
+}
+.wrapper{
+    
+    /* background-image: url("vit-image.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0,0.3),rgba(0,0,0,0.6)),url("vit-image.jpg");
+   height: 600px ;
+   width:83%;
+    
+   background-size:100% 600px ;
+    margin:auto;
+    padding:0;
+}
+body{ background-color: #4bf5e9cc;
+    box-sizing:border-box;
+ 
+}
+footer{
+background-color: #11131a;
+height: 50px;
+margin: 0px;
+
+}
+footer p{
+    font-size: larger;
+    color:#66fcf1;
+    text-align: center;
+    padding:10px;
+    font-family: 'Work Sans', sans-serif;
+}
