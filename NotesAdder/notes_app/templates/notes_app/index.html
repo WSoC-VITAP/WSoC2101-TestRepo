@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes APP</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+}
+
+td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h1> NOTES ADDER APP </h1>
+<br>
+<p style="font-size:20px; text-align:right">create a new note here
+<a href="/note_add/"> add </a>
+</p>
+<table class="center" style="width:100%">
+<tr>
+<th>SI.no</th>
+<th>content</th>
+<th>options</th>
+</tr>
+<!--    <td>{{id}}</td>-->
+<!--    <td>{{content}}</td>-->
+<!--    <td><a href="#" target="_self">delete</a>   <a href="#" target="_self">modify</a> </td>-->
+    {% for note in notes %}
+        <tr>
+            <td>{{note.id}}</td>
+            <td>{{note.content}}</td>
+            <td><a href="/delete/{{note.id}}" target="_self">delete</a></td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
