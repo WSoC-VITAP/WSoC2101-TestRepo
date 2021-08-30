@@ -7,9 +7,12 @@ class IndexPage(TemplateView):
     template_name = 'notes_app/index.html'"""
 
 import random
+
+from django.contrib.auth import login
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.http import HttpResponse
 from django.template.loader import render_to_string
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Note
 
 
@@ -52,3 +55,26 @@ def add_note(request):
         note_obj.save()
         # return HttpResponse("notes_app\index.html")
         return home_view(request)
+
+def register_view(request):
+    form = UserCreationForm(request.POST or None)
+    if form.is_valid():
+        user_obj = form.save()
+        return redirect('/login')
+    context = {"form": form}
+    return render(request, "notes_app/register.html", context)
+
+
+def login_view(request):
+    if request.method == "POST":
+        form = AuthenticationForm(request, data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            return redirect('/')
+    else:
+        form = AuthenticationForm(request)
+    context = {
+        "form": form
+    }
+    return render(request, "notes_app/login_view.html", context)
