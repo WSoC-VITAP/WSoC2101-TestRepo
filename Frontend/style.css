@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto&display=swap');
+/*
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+/*root styling*/
+:root{
+    --light: #f8f9fa;
+    --secondary:#adb5bd;
+    --dark:#343a40;
+    --primary-color: #f15bb5;
+    --secondary-color:#2ec4b6;
+    --border: #e9ecef;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(images/college_image.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+a{
+  text-decoration: none;
+}
+.car{
+    font-family: 'Poppins', sans-serif; 
+}
+.bg-light{
+    background-color: var(--dark);
+    opacity: 60%;
+}
+*>*{
+    box-sizing: border-box;
+}
+.text-white{
+  color: white;
+  position: relative;
+  padding-left: 500px;
+}
+.nav-brand{
+  font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    align-self: center;
+    font-size: 37px;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.nav-brand:hover{
+    color:var(--secondary-color);
+}
+.collapse{
+    align-self: center;
+}
+.nav-link{
+    font-size: 18px;
+    margin: 12px;
+    color:var(--light);
+    font-family: 'DM Sans', sans-serif;
+}
+.nav-link:hover{
+    color:var(--secondary-color);
+}
+.nav-link1{
+    font-size: 18px;
+    margin: 12px;
+    color:var(--light);
+    font-family: 'DM Sans', sans-serif;
+}
+.nav-link1:hover{
+    color:var(--dark);
+}
+.login{
+    display: inline;
+    border-right: 1px solid var(--secondary);
+    padding-right: 12px;
+    margin-right: 10px;
+}
+.button{
+    background: var(--secondary-color);
+    border: none;
+}
+.lorem{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: var(--light); 
+
+}
+.des{
+    margin: 50px 50px;
+    padding: 10px 0px;
+}
+.foot{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--light);
+    font: bold;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    opacity: 60%;
+ }
